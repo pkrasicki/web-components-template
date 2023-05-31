@@ -1,0 +1,31 @@
+@import "global.css";
+
+:root
+{
+	--primary: rgb(0, 134, 83);
+	--background: rgb(241, 241, 241);
+}
+
+*
+{
+	box-sizing: border-box;
+}
+
+html, body
+{
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+body
+{
+	background: var(--background);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container
+{
+	padding: 20px;
+}

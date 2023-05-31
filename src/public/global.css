@@ -1,0 +1,20 @@
+/* global styles */
+
+.text-center
+{
+	text-align: center;
+}
+
+.text-primary
+{
+	color: var(--primary);
+}
+
+.card
+{
+	padding: 20px;
+	box-shadow: 0 0 5px rgb(141, 141, 141);
+	border-radius: 5px;
+	width: 400px;
+	background-color: white;
+}
