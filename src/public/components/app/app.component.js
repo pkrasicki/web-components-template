@@ -7,6 +7,10 @@ class AppComponent extends Component
 	constructor()
 	{
 		super(htmlTemplate, stylesheet);
+	}
+
+	connectedCallback()
+	{
 		this.shadowRoot.querySelector(".title").textContent = document.title;
 	}
 }
