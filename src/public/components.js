@@ -8,16 +8,22 @@ const components = [
 ];
 
 /**
- * Initializes custom components
+ * Initializes global styles
+ * @returns {CSSStyleSheet} CSSStyleSheet
  */
-const initComponents = () =>
+export const initGlobalStyles = () =>
 {
 	globalStyleSheet.replaceSync(globalStyles);
+	return globalStyleSheet;
+};
 
+/**
+ * Initializes custom components
+ */
+export const initComponents = () =>
+{
 	components.forEach(component =>
 	{
 		customElements.define(component.selector, component.component);
 	});
-}
-
-export default initComponents;
+};

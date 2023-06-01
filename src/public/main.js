@@ -1,4 +1,6 @@
 import "./index.css";
-import initComponents from "./components";
+import {initComponents, initGlobalStyles} from "./components";
+
+document.adoptedStyleSheets = [ initGlobalStyles() ];
 
 initComponents();
